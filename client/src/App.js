@@ -12,7 +12,7 @@ function App() {
     try{
       if( text.length >= 3){
         setShow(false);
-        const data = await fetch(`http://localhost:3001/iecho?text=${text}`)
+        const data = await fetch(`https://invertion.herokuapp.com/iecho?text=${text}`)
         .then(r => r.json())
         
         setResults([data, ...results])
