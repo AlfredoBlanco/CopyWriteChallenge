@@ -2,6 +2,10 @@ const { Router } = require('express');
 
 const app = Router();
 
+app.get('/', (req, res) => {
+    res.json({app: 'Hola'})
+})
+
 app.get('/iecho', (req, res) => {
     const { text } = req.query;
     
